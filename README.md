@@ -19,3 +19,12 @@ Field: username with type: string and value: mario
 Field: room with type: string and value: general
 Field: created_at with type: timestamp and date set to current date
 
+Different sections of code for the project are built into different classes.
+The class called Chatroom will handle the chatroom and all data in it.
+The class called chatUI will handle all the chat user interface. 
+
+The Chatoom class does the follwing:
+add new chat documents,
+set up real-time listener to get new chats,
+update the username,
+update the room

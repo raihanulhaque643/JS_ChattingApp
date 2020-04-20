@@ -6,6 +6,10 @@ class ChatUI {
     constructor(list){
       this.list = list;
     }
+    //clear method will be used to clear out chats when switching rooms
+    clear(){
+        this.list.innerHTML = '';
+    }
     render(data){
       const when = dateFns.distanceInWordsToNow(
         data.created_at.toDate(),
